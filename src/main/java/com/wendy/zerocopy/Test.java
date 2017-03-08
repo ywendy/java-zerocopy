@@ -42,6 +42,6 @@ public class Test {
         long begin = System.currentTimeMillis();
         fileCopy.copyFile(srcFile, destFile);
 
-        System.out.println(fileCopy.getClass().getSimpleName()+",Copy："+(srcFile.length()/1000/1000)+"M 文件,耗时："+(System.currentTimeMillis() - begin) + "ms");
+        System.out.println(fileCopy.getClass().getSimpleName()+",Copy："+(srcFile.length()/1024/1024)+"M 文件,耗时："+(System.currentTimeMillis() - begin) + "ms");
     }
 }
